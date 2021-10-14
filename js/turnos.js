@@ -10,9 +10,9 @@ class Turno {
 const guardarDatos = () => {
 const turnos = new Turno(
     {
-        nombre : document.getElementById("nombre"),
-        dia : document.getElementById("dia"),
-        hora : document.getElementById("hora"),
+        nombre : document.getElementById("nombre").value,
+        dia : document.getElementById("dia").value,
+        hora : document.getElementById("hora").value,
     })
 
     document.getElementById("guardado").innerHTML += `
