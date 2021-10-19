@@ -22,3 +22,12 @@ const turnos = new Turno(
 
     return turnos 
 }
+
+const boton = document.getElementById("btn")
+
+boton.addEventListener("click", (e) => {
+    e.preventDefault()
+    console.log(nombre.value)
+    console.log(dia.value)
+    console.log(hora.value)
+})
