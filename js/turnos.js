@@ -1,7 +1,6 @@
-$(document).ready()
+$( document ).ready(function() {
 
-
-    // Pacientes
+ // Pacientes
     class Turno {
     constructor ({
         nombre, 
@@ -68,3 +67,4 @@ $(document).ready()
     form.reset()
     })
 
+});
