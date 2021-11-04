@@ -68,3 +68,27 @@ $( document ).ready(function() {
     })
 
 });
+
+const url = 'http://nolaborables.com.ar/api/v2/feriados/2021';
+
+$("#calendario").append('<button id="btn2">Calendario</button>')
+
+$('#btn2').click (() => {
+    
+    let calendario;
+    $.get(url, (respuesta, estado) =>{
+
+        if(estado == "success"){
+            calendario = respuesta;
+        }
+
+    calendario.forEach(element => {
+        $('#feriados').append (`
+        <li>${element.motivo} - ${element.dia}/${element.mes}</li>
+        `)
+    });
+
+    })
+
+
+})
