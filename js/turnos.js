@@ -25,10 +25,8 @@ $( document ).ready(function() {
             hora : document.getElementById("hora").value,
         })
 
-    document.getElementById("guardado").append (`
-    ${turnos.nombre}
-    ${turnos.dia}
-    ${turnos.hora}
+    $('#guardado').append (`
+    <li>${turnos.nombre}, ${turnos.dia}, ${turnos.hora}.</li>
     `)
     console.log(turnos)
     return turnos 
