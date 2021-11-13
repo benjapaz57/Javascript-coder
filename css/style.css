@@ -1,0 +1,18 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: rgba(4, 49, 100, 0.685);
+  font-size: 15px;
+}
+.backgroundImg {
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+.textFooter {
+  color: whitesmoke;
+}
