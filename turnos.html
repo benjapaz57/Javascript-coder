@@ -7,6 +7,7 @@
     <title>Gaby Ferreyra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <!-- Nav start -->
@@ -28,39 +29,40 @@
         </div>
     </nav>
     <!-- End Nav -->
-    <div class="backgroundImg">
+    <div>
+    <div class="backgroundImg content">
 
+            <h1>Lic. Gabriela Ferreyra</h1>
 
-        <h1>Lic. Gabriela Ferreyra</h1>
+            <div class="container">
+                <form action="*" method="post" id="formulario" class="d-flex flex-column align-items-center justify-content-center">
 
-        <div >
-            <form action="*" method="post" id="formulario">
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                    <input type="date" id="dia" placeholder="Día que desea venir" class="my-2">
+                    <input type="time" id="hora" placeholder="Hora del turno" class="mb-1">
+                    <button id="btn" class="btn btn-secondary">Enviar</button>
 
-                <input type="text" id="nombre" placeholder="Ingrese su Nombre y Apellido">
-                <input type="text" id="dia" placeholder="Ingrese el día que desea venir">
-                <input type="number" id="hora" placeholder="Ingrese la hora en la que desea venir">
-                <button id="btn">Enviar</button>
-
-            </form>
+                </form>
+            </div>
+            <div id="guardado" class="container mi-3 p-3">
+                <h2>Su turno será guardado para el día:</h2>
+                <ul id="fechas"></ul>
+            </div>
+            <div id="logIn">
+                
+            </div>
+            <div id="calendario" class="p-4 rounded bg-secondary container">
+                <ul id="feriados"></ul>
+            </div>
         </div>
-        <div id="guardado">
-            <h2>Su turno será guardado para el día:</h2>
-            <ul id="fechas"></ul>
-        </div>
-        <div id="logIn">
-            
-        </div>
-        <div id="calendario">
-            <ul id="feriados"></ul>
-        </div>
+        <!-- comienza footer -->
+        <footer class="text-center py-4 textFooter bg-dark">
+            <div>
+                <p class="textFooter">Todos los derechos reservados. Benjamin Paz©</p>
+            </div>
+        </footer>
+        <!-- termina footer -->
     </div>
-    <!-- comienza footer -->
-    <footer class="text-center py-4 textFooter bg-dark">
-        <div class="container">
-            <p class="textFooter">Todos los derechos reservados. Benjamin Paz©</p>
-        </div>
-    </footer>
-    <!-- termina footer -->
     <script src="js/jquery.js"></script>
     <script src="js/turnos.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->

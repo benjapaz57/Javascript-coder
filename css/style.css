@@ -6,7 +6,7 @@ h1 {
   text-align: center;
   text-decoration: underline;
   color: rgba(4, 49, 100, 0.685);
-  font-size: 15px;
+  font-size: 30px;
 }
 .backgroundImg {
   background-image: url(../img/background.png);
@@ -15,4 +15,8 @@ h1 {
 }
 .textFooter {
   color: whitesmoke;
+}
+
+.content {
+  min-height: 100vh;
 }

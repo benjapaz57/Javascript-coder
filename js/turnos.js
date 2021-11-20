@@ -68,9 +68,10 @@ $(document).ready(function () {
 
 });
 
+//API
 const url = 'http://nolaborables.com.ar/api/v2/feriados/2021';
 
-$("#calendario").append('<button id="btn2">Calendario</button>')
+$("#calendario").append('<button id="btn2" class= "btn btn-light">Calendario</button>')
 
 $('#btn2').click(() => {
 
@@ -91,27 +92,3 @@ $('#btn2').click(() => {
 
 
 })
-
-//////////////////////////////////////
-
-const validarUsuario = () => {
-
-    const user = "admin";
-    const pass = "admin123";
-    //verificador 
-    let valor = $("#pass").value;
-    if (valor == null || valor.lenght == 0 || valor != pass) {
-        alert("Contraseña Incorrecta");
-    } else {
-        alert("Bienvenida")
-        localStorage.setItem("usuario_conectado", "true")
-        console.log(localStorage.getItem("usuario_conectado"))
-    }
-}
-
-$("#logIn").append(`
-<input type="text" id="user" placeholder"usuario">
-<input type="password" id="pass" placeholder"contraseña">
-<button id="btn3">Ingresar</button>
-
-`)
